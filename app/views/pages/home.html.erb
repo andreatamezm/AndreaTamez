@@ -1,0 +1,264 @@
+<div class="slide-up"></div>
+<div class="container">
+  <div class="title-container">
+    <h1 class="title">
+      <span>Hello!</span><br>
+      <span>I'm Andrea Tamez</span>
+    </h1>
+    <p class="subtitle">I am a software engineer based in the Bay Area</p>
+    <div class="buttons-container">
+      <a href="https://www.linkedin.com/in/andreatamezm/" target="_blank" class="btn1">LinkedIn</a>
+      <a href="https://drive.google.com/file/d/1i8gFi26F2pYx2Y3YodbdCuVrI11mecNm/view?usp=sharing" target="_blank" class="btn2">Resume</a>
+    </div>
+  </div>
+  <div class="logos-container">
+    <div class="logo-marquee">
+      <%= render partial: "logos" %>
+      <%= render partial: "logos" %>
+    </div>
+  </div>
+  <div class="learn-anything-container">
+    <%= image_tag "learn_anything.png", alt: "Learn Anything", class: "learn-anything-image" %>
+    <div class="learn-anything-text">
+      <span>I can learn</span><br>
+      <span>anything</span>
+    </div>
+  </div>
+  <div class="project-section project-rioapp project-even">
+    <div class="project-content">
+      <div class="project-text">
+        <h2 class="project-title">Rio</h2>
+        <p class="project-subtitle project-subtitle-even">
+          Rio is an iOS mobile application designed to encourage and inspire users to take small, everyday actions that make a big impact on the environement.
+        </p>
+        <p class="project-subtitle project-subtitle-even">
+          Rio allows users to snap a photo of the environemental action you take each day and share it with your friends. Whether it is using a reusable water bottle, biking to work instead of driving, or planting a tree, every action counts. 
+        </p>
+        <p class="project-subtitle project-subtitle-even">
+          Rio includes a "memories" feature that saves all your photos so you can look back on your journey and see how much you've accomplished. And with the social aspect, you can connect with like-minded individuals who share your passion for the envrionemtn and see what they're doing to make a difference!
+        </p>
+      </div>
+      <div class="project-images">
+        <div class="slideshow-container">
+          <!-- Add your images here -->
+          <div class="mySlides" data-slideshow="0">
+            <div class="project-images-container">
+              <%= image_tag "rio1.png", alt: "Image 1 description" %>
+            </div>
+            <div class="project-caption-container">
+              <p class="caption caption-odd">Caption for Rio Image 1</p>
+            </div>
+          </div>
+          <div class="mySlides" data-slideshow="0">
+            <div class="project-images-container">
+              <%= image_tag "rio2.png", alt: "Image 1 description" %>
+            </div>
+            <div class="project-caption-container">
+              <p class="caption caption-odd">Caption for Rio Image 1</p>
+            </div>
+          </div>
+          <div class="mySlides" data-slideshow="0">
+            <div class="project-images-container">
+              <%= image_tag "rio3.png", alt: "Image 1 description" %>
+            </div>
+            <div class="project-caption-container">
+              <p class="caption caption-odd">Caption for Rio Image 1</p>
+            </div>
+          </div>
+          <div class="mySlides" data-slideshow="0">
+            <div class="project-images-container">
+              <%= image_tag "rio4.png", alt: "Image 1 description" %>
+            </div>
+            <div class="project-caption-container">
+              <p class="caption caption-odd">Caption for Rio Image 1</p>
+            </div>
+          </div>
+          <div class="mySlides" data-slideshow="0">
+            <div class="project-images-container">
+              <%= image_tag "rio5.png", alt: "Image 1 description" %>
+            </div>
+            <div class="project-caption-container">
+              <p class="caption caption-odd">Caption for Rio Image 1</p>
+            </div>
+          </div>
+          <div class="mySlides" data-slideshow="0">
+            <div class="project-images-container">
+              <%= image_tag "rio6.png", alt: "Image 1 description" %>
+            </div>
+            <div class="project-caption-container">
+              <p class="caption caption-odd">Caption for Rio Image 1</p>
+            </div>
+          </div>
+          <!-- Add more slides for rio2.png, rio3.png, etc. -->
+          <a class="prev prev-odd" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next next-odd" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="project-section project-quizgpt project-odd">
+    <div class="project-content">
+      <div class="project-text">
+        <h2 class="project-title">QuizGPT</h2>
+        <p class="project-subtitle project-subtitle-odd">
+          QuizGPT is an iOS mobile application for creating and studying flashcards.
+          With QuizGPT, you can easily create studysets by inputting questions related to any topic you want to study.
+        </p>
+        <p class="project-subtitle project-subtitle-odd">
+          QuizGPT has a built-in AI-powered chatbot, powered by ChatGPT API, that generates 4 possible answers for each question.<br>
+        </p>
+        <div class="project-button-container">
+          <a href="https://www.linkedin.com/in/andreatamezm/" target="_blank" class="btn3">Github</a>
+          <a href="https://drive.google.com/file/d/1i8gFi26F2pYx2Y3YodbdCuVrI11mecNm/view?usp=sharing" target="_blank" class="btn4">AppStore</a>
+        </div>
+      </div>
+      <div class="project-images">
+        <div class="slideshow-container">
+          <!-- Add your images here -->
+          <div class="mySlides" data-slideshow="1">
+            <div class="project-images-container">
+              <%= image_tag "quiz1.png", alt: "Image 1 description" %>
+            </div>
+            <div class="project-caption-container">
+              <p class="caption caption-even">QuizGPT allows users to create an account and login to their accounts using firebase authentication</p>
+            </div>
+          </div>
+          <div class="mySlides" data-slideshow="1">
+            <div class="project-images-container">
+              <%= image_tag "quiz2.png", alt: "Image 1 description" %>
+            </div>
+            <div class="project-caption-container">
+              <p class="caption caption-even">
+                Once users are logged in, they are able to create studysets, to do so, they need to input the name of the studyset and the course to which it belongs
+                <br>
+                To create studysets, users just need to tap on the + button in the library page 
+              </p>
+            </div>
+          </div>
+          <div class="mySlides" data-slideshow="1">
+            <div class="project-images-container">
+              <%= image_tag "quiz3.png", alt: "Image 1 description" %>
+            </div>
+            <div class="project-caption-container">
+              <p class="caption caption-even">
+                Users are able to see the studysets they have created in their library and they can tap on each studyset to create flashcards and to study it                
+                <br>
+                To create a flashcard, users just need to tap on the + button
+              </p>
+            </div>
+          </div>
+          <div class="mySlides" data-slideshow="1">
+            <div class="project-images-container">
+              <%= image_tag "quiz4.png", alt: "Image 1 description" %>
+            </div>
+            <div class="project-caption-container">
+              <p class="caption caption-even">
+                Once a user taps on the + button to create a question, all they have to do is input the question they want to study and tap “save”
+                <br>
+                That question will then show up in their studyset
+              </p>
+            </div>
+          </div>
+          <div class="mySlides" data-slideshow="1">
+            <div class="project-images-container">
+              <%= image_tag "quiz5.png", alt: "Image 1 description" %>
+            </div>
+            <div class="project-caption-container">
+              <p class="caption caption-even">
+                Users can add multiple questions to a single studyset. 
+                <br>
+                Users can also tap on each question for multiple choice answers to show up. These multiple choice answers are generated by ChatGPT API.
+                <br>
+                ChatGPT API generates 1 correct answer and 3 incorrect answers. 
+              </p>
+            </div>
+          </div>
+          <div class="mySlides" data-slideshow="1">
+            <div class="project-images-container">
+              <%= image_tag "quiz6.png", alt: "Image 1 description" %>
+            </div>
+            <div class="project-caption-container">
+              <p class="caption caption-even">
+                Users can then tap on each answer to see if it is correct or incorrect. 
+                <br>
+                If the user taps on an incorrect answer, the card will turn red. 
+                <br>
+                If the user taps on a correct answer, the card will turn green. 
+              </p>
+            </div>
+          </div>
+          <div class="mySlides" data-slideshow="1">
+            <div class="project-images-container">
+              <%= image_tag "quiz7.png", alt: "Image 1 description" %>
+            </div>
+            <div class="project-caption-container">
+              <p class="caption caption-even">
+                Users can also tap on the “study” button in the studyset to quiz themselves on the existing questions.
+                <br>
+                If a user taps on the correct answer, the card will turn green. 
+              </p>
+            </div>
+          </div>
+          <div class="mySlides" data-slideshow="1">
+            <div class="project-images-container">
+              <%= image_tag "quiz8.png", alt: "Image 1 description" %>
+            </div>
+            <div class="project-caption-container">
+              <p class="caption caption-even">
+                Users can see how many questions they have completed and how many they have left through the text over the card.
+                <br>
+                Question 2 / 3 indicates that the user is on question 2 and there are a total of 3 questions. 
+              </p>
+            </div>
+          </div>
+          <div class="mySlides" data-slideshow="1">
+            <div class="project-images-container">
+              <%= image_tag "quiz9.png", alt: "Image 1 description" %>
+            </div>
+            <div class="project-caption-container">
+              <p class="caption caption-even">
+                If a user taps on an incorrect answer, the card will turn red. 
+                <br>
+                Note that users are only allowed to tap on one answer per card when they are quizzing themselves. 
+              </p>
+            </div>
+          </div>
+          <div class="mySlides" data-slideshow="1">
+            <div class="project-images-container">
+              <%= image_tag "quiz10.png", alt: "Image 1 description" %>
+            </div>
+            <div class="project-caption-container">
+              <p class="caption caption-even">
+                Once the user is done answering all of the questions in the studyset, they will be able to see their total score
+              </p>
+            </div>
+          </div>
+          <div class="mySlides" data-slideshow="1">
+            <div class="project-images-container">
+              <%= image_tag "quiz11.png", alt: "Image 1 description" %>
+            </div>
+            <div class="project-caption-container">
+              <p class="caption caption-even">
+                Users can create multiple studysets
+                <br>
+                And search for studysets created by other users.              
+              </p>
+            </div>
+          </div>
+          <div class="mySlides" data-slideshow="1">
+            <div class="project-images-container">
+              <%= image_tag "quiz12.png", alt: "Image 1 description" %>
+            </div>
+            <div class="project-caption-container">
+              <p class="caption caption-even">
+                If a users sees a studyset they like, they are able to tap on “Add to library” and that studyset will be added to their library where they can add questions to it and study it. 
+              </p>
+            </div>
+          </div>
+          <a class="prev prev-even" onclick="plusSlides(-1, 1)">&#10094;</a>
+          <a class="next next-even" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

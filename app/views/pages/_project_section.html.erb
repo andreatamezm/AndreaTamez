@@ -1,0 +1,15 @@
+<div class="project-section <%= project_class %>">
+  <div class="project-content">
+    <div class="project-text">
+      <h2 class="project-title"><%= title %></h2>
+      <% subtitles.each_with_index do |subtitle, index| %>
+        <p class="project-subtitle <%= "project-subtitle-#{even_or_odd}" %>">
+          <%= subtitle %>
+        </p>
+      <% end %>
+    </div>
+    <div class="project-images">
+      <%= render partial: "slideshow", locals: { images: images, captions: captions } %>
+    </div>
+  </div>
+</div>
